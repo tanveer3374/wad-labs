@@ -3,9 +3,9 @@
 }
 .logo{
 background-image: url(bmw.jpeg);
-width: 70px;
-height: 70px;
-border: 2px solid black;
+width: 50px;
+height: 40px;
+margin-right: 500px;
 background-size:contain;
 background-repeat: no-repeat;
 }
@@ -84,4 +84,6 @@ width: 30%;
 margin: auto;
 }
 
-
+footer{
+    text-align: center;
+}
