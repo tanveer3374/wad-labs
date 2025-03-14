@@ -1,45 +1,35 @@
-<<<<<<< HEAD
 :root{
    --bg: aqua; 
+   --ta:center;
+   
 }
 .logo{
-background-image: url(bmw.jpeg);
-width: 50px;
-height: 40px;
+background-image: url(techlogo);
+width: 100px;
+height: 120px;
 margin-right: 500px;
 background-size:contain;
 background-repeat: no-repeat;
 }
 .NandL{
+    font-size: xx-large;
     display:flex;
+    text-align: var(--ta);
+    margin-top: 0%;
 }
+
 
 a{text-decoration: none;}
-/*nav{
- 
-    width:1200px;
-    height:10px;
-    display: flex;
-    margin-right: 100;
-    background-color: burlywood;
-   font-size:20px;
-   padding: 25px;
-}*/
-nav a{
-    margin-right: 35px;
-}
-
-#liked_Things{
-    background-color:var(--bg);
-}
-#disliked_things{
-    background-color:var(--bg);
-}
 
 h1{
     font-style: italics;
-
+    text-align: var(--ta);
     color:red;
+}
+
+.article{
+    font-size: large;
+    display: inline-block;
 }
 
 .imgCard{ 
@@ -50,130 +40,59 @@ h1{
     background-size:contain;
     background-repeat: no-repeat;
     border-radius: 200px;
-    /* margin-left: 500px; */
     box-shadow: 2px 2px 2px 2px gray;
 }
 #heading{
-    text-align: center;
+    text-align: var(--ta);
 }
 #followers{
-    text-align: center;
+    text-align: var(--ta);
     color: blue;
 }
 .card{
-    border:5px solid black;
-    background-color: antiquewhite;
+    border: 2px solid black;
+    border-radius: 4px;
+    background-color:rgb(109, 239, 155);
     width: 25%;
-    display: inline-block;
-    margin-left: 500px;
+    margin-left: 37%;
+    text-align: var(--ta);
 }
 #info{
-    text-align: center;
-    /* margin-left: 500px; */
+    text-align: var(--ta); 
 }
 
-li{list-style: none;}
-
-.left-para{
-display: inline-block;
-width: 65%;
-margin: auto;
+li{list-style: none;
 }
-.figure{
-display: inline-block;
-width: 30%;
-margin: auto;
+li h5{
+    display: inline;
+}
+.artical{
+    border:2px solid black;
+    background-color:darkgray;
+    border-radius: 4px;
+    box-shadow: 2px gray;
+}
+.text-image-container {
+    display: flex;  
+}
+
+.figure {
+    margin-left: 20px;            
+}
+
+figure img {
+    width: 200px;                 
+    height: 150px;                 
+}
+h3,p,ul{
+    margin:0;
+    line-height: 200%;
+    font-style: oblique;
+    font-size: larger;
+    color:black;
 }
 
 footer{
     text-align: center;
-}
-=======
-:root{
-   --bg: aqua; 
-}
-.logo{
-background-image: url(bmw.jpeg);
-width: 70px;
-height: 70px;
-border: 2px solid black;
-background-size:contain;
-background-repeat: no-repeat;
-}
-.NandL{
-    display:flex;
-}
-
-a{text-decoration: none;}
-/*nav{
- 
-    width:1200px;
-    height:10px;
-    display: flex;
-    margin-right: 100;
-    background-color: burlywood;
-   font-size:20px;
-   padding: 25px;
-}*/
-nav a{
-    margin-right: 35px;
-}
-
-#liked_Things{
     background-color:var(--bg);
 }
-#disliked_things{
-    background-color:var(--bg);
-}
-
-h1{
-    font-style: italics;
-
-    color:red;
-}
-
-.imgCard{ 
-    border: 2px solid black;
-    width: 300px;
-    height: 300px;
-    background-image: url(profile.jpeg);
-    background-size:contain;
-    background-repeat: no-repeat;
-    border-radius: 200px;
-    /* margin-left: 500px; */
-    box-shadow: 2px 2px 2px 2px gray;
-}
-#heading{
-    text-align: center;
-}
-#followers{
-    text-align: center;
-    color: blue;
-}
-.card{
-    border:5px solid black;
-    background-color: antiquewhite;
-    width: 25%;
-    display: inline-block;
-    margin-left: 500px;
-}
-#info{
-    text-align: center;
-    /* margin-left: 500px; */
-}
-
-li{list-style: none;}
-
-.left-para{
-display: inline-block;
-width: 65%;
-margin: auto;
-}
-.figure{
-display: inline-block;
-width: 30%;
-margin: auto;
-}
-
-
->>>>>>> 4208c167aef548948389ce9a84e12ac068a2dc20
