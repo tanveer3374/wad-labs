@@ -1,0 +1,82 @@
+root{
+--bg: rgb(183, 177, 177);
+}
+table,td,th{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+
+}
+
+th,tfoot{
+    background-color:gray; 
+}
+
+caption {
+    font-weight: bold;
+    padding:10px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: rgb(206, 206, 200);
+  }
+  tbody tr:nth-child(odd){
+    background-color: rgb(206, 206, 200);
+}
+  tbody tr:hover{
+    background-color:gray; ;
+  }
+
+  table td{
+    width: 27% ;
+  }
+
+ .fieldset{
+     max-width: 50%; 
+border-width: 5px;    
+border-color: black;
+margin-top: 5%;
+border-style: double;
+background-color: rgb(183, 177, 177);
+color: solid black;
+margin-bottom: 2.5%;
+ }
+ .sbutton{
+    float: right;
+    background-color: blue;
+    color: white;
+    box-shadow:2px red;
+    border-radius: 2px;
+ }
+ header{
+    height: 37px;
+    border-style: dotted;
+    margin-bottom: 0%; 
+    background-color:#171717;
+    color: white;
+ }
+ .logo{
+    background-image: url(logo.jpeg);
+    width: 100px;
+    height: auto;
+    margin-right: 500px;
+    background-size:contain;
+    background-repeat: no-repeat;
+    }
+ .NandL{
+    font-size: xx-large;
+    display:flex;
+    text-align: center;
+    font-weight: bold;
+} 
+footer p:first-child{
+    margin-right: 30%;
+}
+ footer{
+    display: flex;
+    background-color:#171717;
+    color:white;
+    justify-content: center;
+} 
+body{
+    background-color: #FAF3E0;
+}
