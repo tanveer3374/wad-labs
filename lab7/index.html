@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Task 7</title>
+</head>
+<body>
+
+    <script>
+        const table = document.createElement('table');
+        table.border = '1';
+        table.cellPadding = '10';
+
+        const thead = document.createElement('thead');
+        const headerRow = document.createElement('tr');
+        const headers = ['Reg No', 'Name', 'GPA'];
+
+        for (const heading of headers) {
+            const th = document.createElement('th');
+            th.innerText = heading;
+            headerRow.appendChild(th);
+        }
+
+        thead.appendChild(headerRow);
+        table.appendChild(thead);
+
+        const tbody = document.createElement('tbody');
+
+        const students = [
+            [1, 'Tanveer', 3.7],
+            [2, 'Saqib', 3.5],
+            [3, 'Daniyal', 3.2],
+            [4, 'Ahsan', 3.8],
+            [5, 'Ali', 3.1],
+            [6, 'Bilal', 3.6]
+        ];
+
+      
+        for (const student of students) {
+            const row = document.createElement('tr');
+            for (const data of student) {
+                const td = document.createElement('td');
+                td.innerText = data;
+                row.appendChild(td);
+            }
+            tbody.appendChild(row);
+        }
+
+        table.appendChild(tbody);
+        document.body.appendChild(table);
+
+        const button = document.createElement('button');
+        button.innerText = 'Calculate Average GPA';
+        button.style.marginTop = '20px';
+
+
+        const result = document.createElement('p');
+
+        
+        button.addEventListener('click', () => {
+            let totalGPA = 0;
+            let count = 0;
+
+            for (let i = 0; i < tbody.rows.length; i++) {
+                const gpaCell = tbody.rows[i].cells[2];
+                const gpa = parseFloat(gpaCell.innerText);
+                if (!isNaN(gpa)) {
+                    totalGPA += gpa;
+                    count++;
+                }
+            }
+
+            const average = (totalGPA / count).toFixed(2);
+            result.innerText = `Average GPA: ${average}`;
+        });
+
+        document.body.appendChild(button);
+        document.body.appendChild(result);
+    </script>
+
+</body>
+</html>
